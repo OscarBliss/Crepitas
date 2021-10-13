@@ -1,0 +1,17 @@
+body{
+    background-color: #AEEBF9;
+    margin: 0;
+    font-family: 'Ephesis', cursive;
+}
+
+.main{
+    margin-top: 140px;
+    text-align: center;
+}
+
+.main h1{
+    color: #025157;
+    font-family: 'Ephesis', cursive;
+    font-size: 3.75rem;
+    font-weight: 900;  
+}
