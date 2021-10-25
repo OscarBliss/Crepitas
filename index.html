@@ -8,34 +8,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700;900&family=Slabo+27px&family=Festive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
+    <script defer>
+        const menu = document.querySelector(".menu");
+        const openMeBtn = document.querySelector(".open-menu");
+        const cloMeBtn = document.querySelector(".close-menu");
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        function toggleMenu(){
+            menu.classList.toggle("menu_opened")
+        }
+        openMeBtn.addEventListener("click",toggleMenu);
+        cloMeBtn.addEventListener("click",toggleMenu);
+    </script>
+
+   <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
     <title>Crepitas</title>
 </head>
 <body>
 
-    <nav class="nav">
-        <ul class="ul">
-            <li class="logo">Crepitas</li>
-            <li class="btn"><span class="fas fa-bars"></span></li>
-            <div class="items">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Crepas</a></li>
-                <li><a href="#">Garnacha</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Quienes somos</a></li>
-            </div>
-            <li class="search-icon">
-                <input type="search" placeholder="Buscar">
-                <label  class="icon">
-                    <span class="fas fa-search"></span>
-                </label>
-            </li>
-        </ul>
-    </nav>
-
-  
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img height="80" width="80" src="./images/logo_crepas.jpg" alt="logo">
+                <div>
+                    Crepitas
+                </div>
+            </a>
+            <button class="open-menu" aria-label="abrir menu">
+                <img height="80" width="80" src="./images/Hamburger_icon.svg.png" alt="abrir">
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="abrir menu">
+                    <img height="100" width="100" src="./images/close-svg.png" alt="cerrar">
+                </button>
+                <li><a href="#Crepas">Crepas</a></li>
+                <li><a href="#Garnachas">Garnachas</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Quienes somos">Quienes somos</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="main">
         <h1>Crepitas</h1>
