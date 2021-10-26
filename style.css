@@ -1,5 +1,4 @@
 body{
-  /* background-color: #bc98f3;*/
     background-color: #FECAFE ;
     margin: 0;
     font-family: "Open Sans" , sans-serif;
@@ -27,7 +26,7 @@ body{
    align-items: center;
    font-size: 50px;
    font-weight: 500;
-   color: #FE4659/*texto*/; 
+   color: #FE4659; /*texto*/
    font-family: 'Festive', cursive;
 }
 
@@ -47,22 +46,68 @@ body{
 }
 
 .menu a{
-    color: #FE4659/*texto*/;
+    color: #FE4659;/*texto*/
     font-size: 25px;
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    background-color: #F6F4BD;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.menu a:hover:after{
+    opacity: 0.8;
+
+}
+.menu a:hover{
+    color:#FDB037;
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 .open-menu,
 .close-menu{
     display: none;
 }
+
+.perfil{
+    margin-top: 105px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.perfil .imagen{
+    margin-top: 32px;
+}
+
+.perfil .imagen img{
+    width: 100%;
+}
+/*.main{
+    font-family: 'Festive', cursive;
+    font-size: 50px;
+    color: azure;
+    position: absolute;
+}
+
+.main h1{
+    display: flex;
+    vertical-align: auto;
+}*/
 
 @media(max-width:950px){
     .menu{
@@ -72,13 +117,12 @@ a{
         top: 0;
         width: 100%;
         align-items: center;
-        background-color: transparent;
+        background-color: white;
         height: 100%;
         overflow: auto;
         opacity: 0;
         pointer-events: none;
         transition: 0.3s;
-
      }
 
     .menu li{
@@ -86,8 +130,9 @@ a{
     }
     
     .menu a{
-        color: #FE4659/*texto*/;
-        line-height: 60px;
+        color: #FE4659;/*texto*/
+        line-height: 70px;
+        font-size: 25px;
     }
 
     .open-menu,
@@ -107,11 +152,15 @@ a{
         opacity: 1;
         pointer-events: all;
     }
+
+    .menu a::after{
+        content: none;  
+    }
+    
+    .menu a:hover,
+    .menu a.selected{
+        color:#FDB037;
+    }
 }
-
-
-
-
-
 
 
