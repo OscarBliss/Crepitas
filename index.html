@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700;900&family=Slabo+27px&family=Festive&family=Source+Sans+Pro:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="output.css">-->
-    <script defer src="app.js"></script>
-   
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
     <title>Crepitas</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
             <button class="open-menu" aria-label="Abrir Menu">
                 <img height="80" width="80" src="./images/Hamburger_icon.svg.png" alt="abrir">
             </button>
-            <ul class="menu ">
+            <ul class="menu">
                 <button class="close-menu" aria-label="abrir menu">
                     <img height="100" width="100" src="./images/close-svg.png" alt="cerrar">
                 </button>
@@ -35,6 +35,7 @@
                 <li><a href="#Garnachas">Garnachas</a></li>
                 <li><a href="#Menu">Menu</a></li>
                 <li><a href="#Quienes somos">Quienes somos</a></li>
+                <li><a href="#" class="show">Iniciar sesion</a></li>
             </ul>
         </nav>
     </header>
@@ -45,52 +46,70 @@
         </div>
     </section>
 
-    <section >
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators selectores">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" >
-            <div class="overlay-image"
-              style="background-image: url(./images/crepastor.jpg);"></div>
-            <div class="container">
-              <h1>Crepastor</h1>
-              <p>Una rica crepa con carne al pastor, piña y queso</p>
-              <a href="" class="btn btn-lg btn-primary">
-                Pide Ya !
-              </a>
-            </div>  
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image"
-            style="background-image: url(./images/crep-hawa.jpg);"></div>
-            <div class="container">
-              <h1>Crepa Hawaina</h1>
-              <p>Una rica crepa con carne al pastor, piña y queso</p>
-              <a href="#" class="btn btn-lg btn-primary">
-                Pide Ya !
-              </a>
-            </div>  
-          </div>
-          <div class="carousel-item">
-            <div class="overlay-image"
-            style="background-image: url(./images/crep-peroni.jpeg);"></div>
-            <div class="container">
-              <h1>Crep-Peroni</h1>
-              <p>Una rica crepa con carne al pastor, piña y queso</p>
-              <a href="#" class="btn btn-lg btn-primary">
-                Pide Ya !
-              </a>
+    <section class="card-container" >
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <article class="col-8 success-stories" >
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators selectores">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img src="./images/crepastor.jpg" alt="pastor">
+                    <div class="card-body">
+                      <h3>Crepastor</h3>
+                      <h4>Una rica crepa con carne al pastor, piña y queso</h4>
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-primary">
+                          Pide Ya !
+                        </button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="./images/crep-peroni.jpeg" alt="pastor">
+                    <div class="card-body">
+                      <h3>Crep-Peroni</h3>
+                      <h4>Una rica crepa con carne al pastor, piña y queso</h4>
+                    </div>
+                    <div class="card-footer">
+                      <button type="button" class="btn btn-primary">
+                        Pide Ya !
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="./images/crep-hawa.jpg" alt="pastor">
+                    <div class="card-body">
+                      <h3>Hawaiana</h3>
+                      <h4>Una rica crepa con carne al pastor, piña y queso</h4>
+                    </div>
+                    <div class="card-footer">
+                      <button type="button" class="btn btn-primary">
+                        Pide Ya !
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
-        
       </div>
     </section>
 
@@ -103,24 +122,24 @@
     <section class="info">
       <article class="info-text">
         <h1>Conocenos</h1>
-        <div class="pixcode pixcode--separator separator separator--flower">✻</div>
-        <p class="parrafo" style="text-align: center;">
-          <span class="text">
-            <strong>Crepitas</strong>
+        <div class="separator--flower">
+          ✻
+        </div>
+        <p>
+          <strong>Crepitas</strong>
               es el espacio ideal para disfrutar de una 
               de nuestras deliciosas crepas y originales 
               Bubble Waffles™, acompañados de un buen café. 
               Nuestro concepto consiste en ofrecerte un espacio 
               alternativo para que puedas disfrutar de una 
-            <strong>excelente experiencia.</strong>
-          </span>
+          <strong>excelente experiencia.</strong>
         </p>
-        <p style="text-align: center;">
-          <a class="pixcode pixcode--btn btn btn--text" href="">Crepitas</a>
+        <p>
+          <a class="btn btn--text" href="">Crepitas</a>
         </p> 
       </article>
       <article class="promo-video">
-        <iframe width="560" height="315" 
+        <iframe width="660" height="380"
             src="https://www.youtube.com/embed/BFdJpSboOL0" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; 
@@ -131,68 +150,233 @@
     </section>
 
     <section class="sect3">
-      <div>
-        <h3>Nueva informacion imagen</h3>
+      <h1>Nuevo texto</h1>
+    </section>
+
+    <section class="info2">
+      <article class="item absolute">
+        <h2>Descubre el</h2>
+        <h1>Menu</h1>
+        
+        <div class="separator--flower2">
+          ✻
+        </div>
+        <p class="p1" style="text-align: center;">
+          <span class="s1">Nuestro menú ha sido diseñado por 
+            una de las chefs más reconocidas en el sector 
+            restaurantero ofreciéndote recetas originales y 
+            con ingredientes de la más alta calidad. 
+            Experimenta nuestras crepas, Bubble Waffles™ y 
+            mucho más.
+          </span>
+        </p>
+        <p style="text-align: center;">
+          <a class="pixcode  pixcode--btn  btn  btn--text" href="menu">
+            Ver menú completo
+          </a>
+        </p>
+      </article>
+      
+        <article class="item">
+          <div class="card-img">
+            <img src="./images/table-1.jpg" alt="img tabla">
+          </div>
+        </article>
+        <article class="item">
+          <div class="card-img">
+            <img src="./images/table-2.jpg" alt="img tabla">
+          </div>
+        </article>
+        <article class="item">
+          <div class="card-img">
+            <img src="./images/table-3.jpg" alt="img tabla">
+          </div>
+        </article>
+        <article class="item">
+          <div class="card-img">
+            <img src="./images/table-4.jpg" alt="img tabla">
+          </div>
+        </article>
+    </section>
+    
+    <section class="modal">
+      <div class="contenedor-todo">
+
+        <div class="caja-trasera">
+          <div class="caja-trasera-login">
+            <h2>Bienvenido al sitio!</h2>
+            <p>Ya tienes Cuenta, inicia sesion para entrar en la pagina</p>
+            <button id="btn-inicio">Iniciar</button>
+            <button id="btn-close" class="modal-close">Cerrar</button>
+          </div>
+              
+          <div class="caja-trasera-registro">
+            <h2>Aun no tienes una cuenta?</h2>
+            <p>Registrate para que puedas iniciar sesion</p>
+            <button id="btn-registro">Registrar</button>
+            <button id="btn-close" class="modal-close">Cerrar</button>
+          </div>
+        </div>
+        
+        <div class="contenedor-login-registro">
+          
+          <form action="" class="formulario-login">
+            <h2>Iniciar sesion</h2>
+            <input type="text" placeholder="Correo Electronico">
+            <input type="password" placeholder="Contrasena">
+            <button>Entrar</button>
+          </form>
+    
+          <form action="" class="formulario-registro">
+            <h2>Registrarse</h2>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="text" placeholder="Correo Electronico">
+            <input type="password" placeholder="Contrasena">
+            <button>Registrarse</button>
+          </form>
+        </div>
+            
       </div>
     </section>
 
-    <Section class="article__content">
-      <div>
-        <section class="page__content  js-post-gallery  cf">
-          <div class="pixcode  pixcode--grid  grid  ">
+    <footer>
+      <form class="suscripcion">
+        <h2>Quieres Saber mas?</h2>
+        <h3>Registrate aqui!</h3>
+        <div>
+          <label for="mc_mv_EMAIL">Email Address
+            <span class="mc_required">*</span>
+          </label>
+          <input type="text" size="18" placeholder="ejemplo.com">
+        </div>
 
-          <div class="grid__item six-twelfths palm-one-whole ">
+        <div>
+          <label for="mc_mv_FNAME">Nombre</label>
+          <input type="text" size="18" placeholder="Oscar">
+        </div>
 
-
-          <style type="text/css">
-          #gallery-0 {
-            margin: auto;
-          }
-          #gallery-0 .gallery-item {
-            float: left;
-            text-align: center;
-            width: 50%;
-          }
-          /* see gallery_shortcode() in wp-includes/media.php */
-          </style>
-          <div id="gallery-0" class="gallery galleryid-15 gallery-columns-2 gallery-size-large"><figure class="gallery-item">
-          <div class="gallery-icon landscape">
-            <a data-title="discovermenu1-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu" data-alt="" href="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu1-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu.jpg"><img width="600" height="400" src="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu1-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu.jpg" class="attachment-large size-large" alt="" srcset="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu1-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu.jpg 600w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu1-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu-300x200.jpg 300w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu1-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu-400x267.jpg 400w" sizes="(max-width: 600px) 100vw, 600px"></a>
-          </div></figure><figure class="gallery-item">
-          <div class="gallery-icon landscape">
-            <a data-title="Discovermenu2-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu" data-alt="" href="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu2-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu.jpg"><img width="600" height="400" src="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu2-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu.jpg" class="attachment-large size-large" alt="" srcset="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu2-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu.jpg 600w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu2-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu-300x200.jpg 300w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu2-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-menu-400x267.jpg 400w" sizes="(max-width: 600px) 100vw, 600px"></a>
-          </div></figure><figure class="gallery-item">
-          <div class="gallery-icon landscape">
-            <a data-title="Discovermenu3-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas" data-alt="" href="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu3-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas.jpg"><img width="600" height="400" src="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu3-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas.jpg" class="attachment-large size-large" alt="" srcset="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu3-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas.jpg 600w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu3-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-300x200.jpg 300w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu3-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-400x267.jpg 400w" sizes="(max-width: 600px) 100vw, 600px"></a>
-          </div></figure><figure class="gallery-item">
-          <div class="gallery-icon landscape">
-            <a data-title="Discovermenu4-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas" data-alt="" href="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu4-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas.jpg"><img width="600" height="400" src="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu4-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas.jpg" class="attachment-large size-large" alt="" srcset="https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu4-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas.jpg 600w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu4-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-300x200.jpg 300w, https://creperiapolanco.com/wp-content/uploads/2016/05/discovermenu4-creperia-polanco-bubble-waffles-franquicia-mexico-tijuana-postre-cafe-crepas-400x267.jpg 400w" sizes="(max-width: 600px) 100vw, 600px"></a>
-          </div></figure>
+        <div>
+          <label for="mc_mv_LNAME">Apellido</label>
+          <input type="text" size="18" placeholder="Ramirez" name="mc_mv_LNAME" id="mc_mv_LNAME" class="mc_input">
+        </div>
+        <div id="mc-indicates-required">
+                * = campo obligatorio			
+        </div>
+          
+        <div class="mc_signup_submit">
+          <input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="Subscribirse" class="button">
+        </div>
+              <br>
+          <div id="mc_display_rewards">
+            powered by <a href="http://www.mailchimp.com/affiliates/?aid=03d8ea02c7e7984ff31597991&amp;afl=1">MailChimp</a>!
           </div>
-
-
+      </form>
+      <hr>
+      <div class="container-footer">
+        <div class="box-footer">
+          <div class="logo">
+            <img height="80" width="80" src="images/logo_crepas.jpg" alt="">
           </div>
-
-          <div class="grid__item six-twelfths palm-one-whole island">
-
-          <hgroup class="pixcode  pixcode--heading article__headline">
-          <h2 class="headline__secondary"><span class="first-letter">D</span>escubre el</h2>
-          <h1 class="headline__primary">Menú</h1>
-          </hgroup>
-          <div class="pixcode  pixcode--separator  separator separator--flower separator_color--dark">✻</div>
-
-          <p class="p1" style="text-align: center;"><span class="s1">Nuestro menú ha sido diseñado por una de las chefs más reconocidas en el sector restaurantero ofreciéndote recetas originales y con ingredientes de la más alta calidad. Experimenta nuestras crepas, Bubble Waffles™ y mucho más.</span></p>
-          <p style="text-align: center;"><a class="pixcode  pixcode--btn  btn  btn--text" href="menu">Ver menú completo</a>
-
-          </p></div>
-
-
+          <div class="term">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolore quidem dolorem incidunt officia suscipit corrupti, illum neque vitae accusantium facilis aperiam, nesciunt velit eligendi. Eius officia vero consequuntur delectus.</p>
           </div>
+        </div>
+        <div class="box-footer">
+          <h2>Contacto</h2>
+          <p class="white pl-40 fs-14" style="padding-left: 40px; font-size: 14px;">
+    			                    
+            <a href="tel://+52 (55) 3163 5347">
+              <i class="fa fa-phone mini-mr xd_text_color_blue"></i> 
+              +52 (55) 3163 5347
+            </a>
+            <br><br>
+            <span>México</span><br>
+              Shakespeare 21 Piso 4<br>
+              Colonia Anzures<br>
+              C.P. 11590 <br>
+              Delegación Miguel Hidalgo<br>
+              CDMX<br><br>
 
-        </section>
+              <span>Miami</span><br>
+              201 South Biscayne Blvd, <br>
+              28th Floor, Suite 2809, <br>
+              Brickell. Miami 33131<br><br>
+
+              <span>Colombia</span><br>
+              Torre Urban Plaza, piso 4. <br>
+              Calle 90 #11-13, <br>
+              Bogotá, Colombia 
+            <br>
+          </p>
+        </div>
+        <div class="box-footer">
+          <h2>Menu</h2>
+          <ul>
+            <li class="white">
+              <a class="underline-hover " href="/nosotros">
+                  Nosotros
+              </a>
+            </li>
+            
+            <li class="white">
+              <a class="underline-hover " href="/como-invertir">
+                Cómo invertir
+              </a>
+            </li>
+            
+            <li class="white">
+              <a class="underline-hover " href="/noticias">
+                  Noticias
+              </a>
+            </li>
+                     
+            <li class="white">
+              <a class="underline-hover" href="/como-invertir#quiero-una-franquicia">
+                Quiero una franquicia
+              </a>
+            </li>
+            
+            <li class="white">
+              <a class="underline-hover " href="/contacto">
+                Contacto&nbsp;&nbsp;
+              </a>
+            </li>
+            
+            <li class="white">
+                <a class="underline-hover  " href="/aviso-de-privacidad">
+                  Aviso de Privacidad
+                </a>
+            </li>
+            
+            <!--Go to Site LATAM-->
+            <li class="xd_colored_red">
+              <a class="underline-hover " href="/latam">
+                Sitio LATAM
+              </a>
+              &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+          </ul>
+               
+        </div>
+        <div class="box-footer">
+          <h2>Redes Sociales</h2>
+          <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
+          <a href=""><i class="fab fa-twitter-square"></i> Twiter</a>
+          <a href=""><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
       </div>
-    </Section>
-    
+
+      <div class="box-copyright">
+        <hr>
+        <p>Todos los derechos reservados &copy; 2021
+          <b>Crepitas</b></p>
+      </div>
+    </footer>
+
+    <script src="login.js"></script>
+    <script defer src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>

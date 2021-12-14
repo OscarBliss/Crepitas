@@ -1,21 +1,24 @@
 .topheader {
-  background-color: #FECAFE;
   position: fixed;
   box-shadow: 0 3px 5px cornflowerblue;
-  width: 100%;
+  background-image: url(./images/fondo-section.jpg);
+  background-attachment: fixed;
   left: 0;
   top: 0;
   width: 100%;
   padding: 5px;
+  z-index: 1;
 }
-.topheader .topnav {
+
+.topnav {
   display: flex;
   justify-content: space-between;
+  background-attachment: fixed;
   padding: 10px;
   max-width: 980px;
   margin: 0 auto;
 }
-.topheader .topnav .logo {
+.topnav .logo {
   display: flex;
   align-items: center;
   font-size: 50px;
@@ -23,27 +26,30 @@
   color: #FE4659;
   font-family: "Festive", cursive;
 }
-.topheader .topnav .logo img {
+.topnav .logo img {
   border-radius: 50%;
 }
-.topheader .topnav .menu {
+.topnav .open-menu {
+  display: none;
+}
+.topnav .menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.topheader .topnav .menu li {
+.topnav .menu li {
   padding: 0 15px;
 }
-.topheader .topnav .menu a {
+.topnav .menu a {
   color: #FE4659;
   font-size: 25px;
   font-weight: 500;
   line-height: 50px;
   text-transform: uppercase;
-  text-decoration: none;
+  position: relative;
 }
-.topheader .topnav .menu a ::after {
+.topnav .menu a ::after {
   content: "";
   background-color: #F6F4BD;
   position: absolute;
@@ -54,69 +60,43 @@
   opacity: 0;
   transition: 0.3s;
 }
-.topheader .topnav .menu a :hover:after {
+.topnav .menu a :hover:after {
   opacity: 0.8;
 }
-.topheader .topnav .menu a :hover {
+.topnav .menu a :hover {
   color: #FDB037;
 }
-.topheader .topnav .open-menu,
-.topheader .topnav .close-menu {
+.topnav .menu .close-menu {
   display: none;
 }
 
-.info {
-  display: flex;
-  width: 70%;
-  margin: 100px auto;
-  align-items: center;
-}
-.info .info-text h1 {
-  font-family: "Source Sans Pro", Georgia, serif;
-  font-size: 40px;
-  line-height: 48px;
-  color: white;
-  font-weight: 900;
-}
-.info .info-text h1 .parrafo {
-  padding: 10px;
-}
-
-/*@media(max-width:950px){
+/*
+@media(max-width:500px){
     .menu{
         flex-direction: column;
         position: fixed;
         left: 0;
         top: 0;
-        width: $ancho;
+        width: 100%;
         align-items: center;
-        background-color: transparent;
+        background-color: white;
         height: 100%;
         overflow: auto;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s;
-        li{
-            padding: 0;
-        }
-        a{
-            color: $color-text;
-            line-height: 70px;
-            font-size: 25px;
-            ::after{
-                content: none;
-            }
-            :hover,
-            .selected{
-                color:#FDB037; 
-            }
-        }
-        .close-menu{
-            align-self: flex-end;
-            padding: 5px 5px;
-        }
-
      }
+
+    .menu li{
+        padding: 0;
+    }
+
+    .menu a{
+        color: #FE4659;
+        line-height: 70px;
+        font-size: 25px;
+    }
+
     .open-menu,
     .close-menu{
         display: block;
@@ -125,16 +105,65 @@
         cursor: pointer;
     }
 
+    .close-menu{
+        align-self: flex-end;
+        padding: 5px 5px;
+    }
+
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .menu a::after{
+        content: none;  
+    }
+
+    .menu a:hover,
+    .menu a.selected{
+        color:#FDB037;
+    }
 
     .open-menu:focus:not(:focus-visible),
     .close-menu:focus:not(:focus-visible){
         outline: none;
     }
 
-    .menu-opened{
-        opacity: 1;
-        pointer-events: all;
+    .info{
+        flex-direction: column;
+        max-width: 90%;
+        width: unset;
     }
-}*/
+
+    .promo-video iframe{
+        width: 100%;
+    }
+
+    .info-text{
+        margin-top: 10px;
+    }
+
+    .info-text h1{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .info-2  {
+        flex-direction: column;
+        max-width: 90%;
+        width: unset;
+    }
+
+    .palm-one-whole {
+        width: 100%;
+    }
+
+
+
+    .carousel-inner{
+        max-width: 100%;
+    }
+}
+*/
 
 /*# sourceMappingURL=output.css.map */

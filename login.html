@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style-login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+
+        <div class="contenedor-todo">
+          <i class="far fa-times-circle" id="close">X</i>
+          <div class="caja-trasera">
+            <div class="caja-trasera-login">
+              <h2>Bienvenido al sitio!</h2>
+              <p>Ya tienes Cuenta, inicia sesion para entrar en la pagina</p>
+              <button id="btn-inicio">Iniciar</button>
+              
+            </div>
+                
+            <div class="caja-trasera-registro">
+              <h2>Aun no tienes una cuenta?</h2>
+              <p>Registrate para que puedas iniciar sesion</p>
+              <button id="btn-registro">Registrar</button>
+              <button class="modal-close">Cerrar</button>
+            </div>
+          </div>
+          
+          <div class="contenedor-login-registro">
+
+            <form action="" class="formulario-login">
+              <h2>Iniciar sesion</h2>
+              <input type="text" placeholder="Correo Electronico">
+              <input type="password" placeholder="Contrasena">
+              <button>Entrar</button>
+            </form>
+      
+            <form action="" class="formulario-registro">
+              <h2>Registrarse</h2>
+              <input type="text" placeholder="Nombre">
+              <input type="text" placeholder="Apellido">
+              <input type="text" placeholder="Correo Electronico">
+              <input type="password" placeholder="Contrasena">
+              <button>Registrarse</button>
+            </form>
+          </div>
+          <a href="#" class="modal-close">Cerrar</a>
+        </div>
+    </main>
+  <script src="login.js"></script>
+</body>
+</html>
