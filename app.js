@@ -15,13 +15,13 @@ closeMenuBtn.addEventListener("click", toggleMenu);
  var closeModal = document.querySelector('.modal-close')
  const cloMod = document.getElementById('btn-close')
 
- openModal.addEventListener('click',(e)=>{
-      e.preventDefault();
+ openModal.addEventListener('click',()=>{
+      
       modal.classList.add('modal-show')
  })
 
- closeModal.addEventListener('click',(e)=>{
-     e.preventDefault();
+ closeModal.addEventListener('click',()=>{
+     
      modal.classList.remove('modal-show')
  })
 

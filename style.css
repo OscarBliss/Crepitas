@@ -657,9 +657,6 @@ footer{
         line-height: 1.5;
     }
 
-    .suscripcion{
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 850px){
