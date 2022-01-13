@@ -1,0 +1,126 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Open Sans" , sans-serif;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    background-color: #d0f0f8;
+    .container-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+        .box-footer{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            .logo{
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .term{
+                max-width: 220px;
+                margin-top: 20px;
+                font-weight: 500;
+                color: #7a7a7a;
+                font-size: 18px;
+            }
+            h2{
+                margin-bottom: 30px;
+                color: #343434;
+                font-weight: 700;
+            }
+            a {
+                margin-top: 10px;
+                color: #7a7a7a;
+                font-weight: 600;
+                .fab{
+                    font-size: 20px;
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            
+        }
+    }
+    .suscripcion{
+        width: 450px;
+        margin: auto;
+        background: rgba(1, 175, 255, 0.1);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 15px;
+        h2{
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 25px;
+        }
+        h3{
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 25px;
+        }
+        div{
+            text-align: left;    
+            margin-bottom: 1em;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+            #mc_signup_submit{
+                background: black;
+                color: white;
+                padding: 10px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        label{
+            display: block;
+            margin-bottom: 0.5em;
+            align-self: auto;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    .box-copyright{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        p{
+            margin-top: 20px;
+            color: #747474;
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: #cf0202;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

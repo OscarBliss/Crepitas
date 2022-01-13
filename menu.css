@@ -1,3 +1,4 @@
+/*@use 'main' as *;*/
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 .menu {
-  margin-top: 50px;
+  *margin-top: 0px;
   width: 100%;
   height: 60vh;
   background: url(./images/pricipal-img.jpg) no-repeat center;
@@ -106,5 +107,24 @@
   top: 0px;
   filter: none;
 }
+.container-cards .card:nth-of-type(1) .img-back {
+  background-image: url(./images/fondo-ne.jpg);
+}
 
-/*# sourceMappingURL=output.css.map */
+.footer {
+  width: 100% !important;
+  height: 420px !important;
+  border: none;
+  overflow-x: hidden;
+}
+.footer::-webkit-scrollbar {
+  display: none;
+}
+
+.encabezado {
+  width: 100% !important;
+  height: auto !important;
+  border: none;
+}
+
+/*# sourceMappingURL=menu.css.map */

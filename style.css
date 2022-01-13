@@ -1,92 +1,10 @@
 body{
-    background-image: url(./images/fondo-section.jpg); 
+    *background-image: url(./images/fondo-section.jpg);
+    background-color: whitesmoke;
     background-attachment: fixed;
     margin: 0;
     font-family: "Open Sans" , sans-serif;
 }
-
-.topheader{
-    position: fixed;
-    box-shadow: 0 3px 5px cornflowerblue;
-    background-image: url(./images/fondo-section.jpg); 
-    background-attachment: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 5px;
-    z-index: 1;
-}
-
-.topnav{
-    display: flex;
-    justify-content: space-between;
-    background-attachment: fixed;
-    padding: 10px;
-    max-width: 980px;
-    margin: 0 auto;
-}
-
-.logo{
-   display: flex;
-   align-items: center;
-   font-size: 50px;
-   font-weight: 500;
-   color: #FE4659; 
-   font-family: 'Festive', cursive;
-}
-
-.logo img{
-    border-radius: 50%;
-}
-
-.menu{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li{
-    padding: 0 15px;
-}
-.menu a{
-    color: #FE4659;
-    font-size: 25px;
-    font-weight: 100;
-    line-height: 50px;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.menu a::after{
-    content: "";
-    background-color: #F6F4BD;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: 4px;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.menu a:hover:after{
-    opacity: 0.8;
-
-}
-.menu a:hover{
-    color:#FDB037;
-}
-
-a{
-    text-decoration: none;
-}
-
-.open-menu,
-.close-menu{
-    display: none;
-}
-
 
 .modal{
     position: fixed;
@@ -250,8 +168,8 @@ a{
     font-family: 'Slabo 27px', serif;
     font-size: 80px;
     font-weight: 900;
-    color: #FECAFE;
-    text-shadow: -20px -2px 20px rgb(204, 13, 6);
+    color: #d825d8;
+    text-shadow: -20px -2px 20px rgb(12, 2, 7);
 }
 
 .perfil .text_principal span{
@@ -269,7 +187,7 @@ a{
 }
 
 .selectores {
-    /* Usualmente una mala práctica, pero aquí está justificado */
+    /* Usualmente una mala práctica, pero aquí está justificado*/ 
     bottom: -30px !important;
 }
 
@@ -376,7 +294,7 @@ a{
     font-family: "Source Sans Pro";
     font-size: 40px;
     line-height: 48px;
-    color: blanchedalmond;
+    color: #d825d8;
     margin-top: 84px;
     margin-bottom: 42px;
     font-weight: 900;
@@ -426,7 +344,7 @@ a{
     font-family: "Source Sans Pro";
     font-size: 40px;
     line-height: 48px;
-    color: blanchedalmond;
+    color: #000000;
     margin-top: 84px;
     margin-bottom: 42px;
     font-weight: 900;
@@ -435,7 +353,7 @@ a{
 }
 
 .info2 .item h1{
-    color: red;
+    color: black;
     text-align: center;
     font-family: "Source Sans Pro";
     font-size: 50px;
@@ -453,210 +371,10 @@ a{
     font-weight: bold;
 }
 
-footer{
-    width: 100%;
-    height: 100%;
-    padding: 50px 0px;
-    background-color: #d0f0f8;
-  
-}
-
-.container-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.box-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.box-footer .logo img{
-    border-radius: 50%;
-}
-
-.box-footer .term{
-    max-width: 220px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 18px;
-}
-
-.box-footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700;
-}
-
-.box-footer a {
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 600;
-}
-
-.box-footer a:hover{
-    opacity: 0.8;
-}
-
-.box-footer a .fab{
-    font-size: 20px;
-}
-
-.box-copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-.box-copyright p{
-    margin-top: 20px;
-    color: #747474;
-}
-
-.box-copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #cf0202;
-}
-
-.suscripcion{
-    width: 450px;
-    margin: auto;
-    background: rgba(1, 175, 255, 0.1);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 15px;
-}
-
-.suscripcion h2{
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 25px;
-}
-
-.suscripcion h3{
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 25px;
-}
-
-.suscripcion div{
-    text-align: left;    
-    margin-bottom: 1em;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-}
-
-.suscripcion label{
-    display: block;
-    margin-bottom: 0.5em;
-    align-self: auto;
-}
-
-.suscripcion input{
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-}
-
-#mc_signup_submit{
-    background: black;
-    color: white;
-    padding: 10px;
-}
-
-#mc_signup_submit:hover{
-    cursor: pointer;
-}
-
-@media(max-width:950px){
-    .menu{
-        flex-direction: column;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        align-items: center;
-        background-color: white;
-        height: 100%;
-        overflow: auto;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s;
-     }
-
-    .menu li{
-        padding: 0;
-    }
+.footer{
+    width: 100% !important;
+    height: 420px !important;
     
-    .menu a{
-        color: #FE4659;/*texto*/
-        line-height: 70px;
-        font-size: 25px;
-    }
-
-    .open-menu,
-    .close-menu{
-        display: block;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    .close-menu{
-        align-self: flex-end;
-        padding: 5px 5px;
-    }
-
-    .menu_opened{
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    .menu a::after{
-        content: none;  
-    }
-    
-    .menu a:hover,
-    .menu a.selected{
-        color:#FDB037;
-    }
-
-    .open-menu:focus:not(:focus-visible),
-    .close-menu:focus:not(:focus-visible){
-        outline: none;
-    }
-
-    .info{
-        flex-direction: column;
-        max-width: 90%;
-        width: unset;
-    }
-    
-    .promo-video iframe{
-        width: 100%;
-    }
-
-    .info-text{
-        margin-top: 10px;
-    }
-
-    .info-text h1{
-        font-size: 25px;
-        line-height: 1.5;
-    }
-
 }
 
 @media screen and (max-width: 850px){
