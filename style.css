@@ -275,21 +275,7 @@ body{
     align-items: center;
     text-align: center;
 }
-
-.info{
-    padding: 5px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(600px, 4fr));
-    gap: 18px;
-}
-
-.info .info-text{
-    position: relative;
-    grid-column-start: 2;
-    grid-column-end: 1;
-    align-items: center;
-}
-
+/*
 .info .info-text h1{
     font-family: "Source Sans Pro";
     font-size: 40px;
@@ -321,31 +307,70 @@ body{
 
 .promo-video{
     text-align: center;
+}*/
+
+.info{
+    padding: 25px 20px;
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 40%;
+    grid-template-columns: repeat(auto-fill, minmax(600px,1fr));
+}
+
+.info .info-text h1{
+    font-family: "Source Sans Pro";
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    text-align: center;
+    *margin-top: 84px;
+    *margin-bottom: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.info .info-text .separator--flower{
+    height: auto;
+    border: 0;
+    letter-spacing: normal;
+    line-height: 1;
+    text-align: center;
+    margin: 24px 0;
+    font-size: 25px;
+    font-family: Serif;
+    font-weight: bold;
+    color: coral;
+} 
+
+.info .info-text p{
+    text-align: center;
+    font-family: "Source Sans Pro";
+}
+
+.info .promo-video iframe{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
 }
 
 .info2{
+    padding: 25px 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 4fr));
-    gap: 1vw;
+    *grid-template-columns: 50% 50%;
+    grid-auto-rows: 40%;
+    grid-template-columns: repeat(auto-fill, minmax(600px,1fr));
 }
 
-.info2 .item img{
-    max-width: 100%;
+.info2 .item{
+    grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
 }
-
-.absolute{
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
 
 .info2 .item h2{
     font-family: "Source Sans Pro";
     font-size: 40px;
     line-height: 48px;
     color: #000000;
-    margin-top: 84px;
+    margin-top: 8px;
     margin-bottom: 42px;
     font-weight: 900;
     text-align: center;
@@ -353,7 +378,7 @@ body{
 }
 
 .info2 .item h1{
-    color: black;
+    color: rgb(230, 3, 3);
     text-align: center;
     font-family: "Source Sans Pro";
     font-size: 50px;
@@ -369,6 +394,30 @@ body{
     font-size: 25px;
     font-family: Serif;
     font-weight: bold;
+    color: coral;
+} 
+
+.info2 .item p{
+    text-align: center;
+    font-family: "Source Sans Pro";
+}
+
+.pixcode{
+    border-bottom: 2px solid #c59d5f;
+    color: #C59D5F;
+} 
+
+
+.fila{
+    display: grid;
+    *grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 1em; 
+}
+
+.fila img{
+    margin-top: 50px;
+    max-width: 100%;
 }
 
 .footer{

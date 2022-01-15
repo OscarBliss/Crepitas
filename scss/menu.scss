@@ -121,12 +121,8 @@
 
 .footer{
     width: 100% !important;
-    height: 420px !important;
+    height: 1000px !important;
     border: none;
-    overflow-x: hidden;
-    &::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 .encabezado{
