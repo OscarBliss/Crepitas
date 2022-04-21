@@ -1,5 +1,4 @@
 body{
-    *background-image: url(./images/fondo-section.jpg);
     background-color: whitesmoke;
     background-attachment: fixed;
     margin: 0;
@@ -140,10 +139,8 @@ body{
     margin-top: 50px;
     width: 100%;
     height: 100vh;
-    background-image: url(./images/pricipal-img.jpg);
-    background-position: center;
+    background: url(./images/pricipal-img.jpg) no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -168,12 +165,12 @@ body{
     font-family: 'Slabo 27px', serif;
     font-size: 80px;
     font-weight: 900;
-    color: #d825d8;
+    color: #e65ee6;
     text-shadow: -20px -2px 20px rgb(12, 2, 7);
 }
 
 .perfil .text_principal span{
-    font-family: 'Festive', cursive;
+    font-family: 'Cookie', cursive;
 }
 
 .card-container {
@@ -236,10 +233,8 @@ body{
     margin-top: 50px;
     width: 100%;
     height: 50vh;
-    background-image: url(./images/sect2.jpg);
-    background-position: center;
+    background: url(./images/sect2.jpg) no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -279,15 +274,35 @@ body{
     margin-top: 50px;
     width: 100%;
     height: 50vh;
-    background-image: url(./images/sect3.jpg);
-    background-position: center;
+    background: url(./images/sect3.jpg) no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.sect3 h1{
+    color: ivory;
+    font-family: 'Cookie', cursive;
+    font-size: 72px;
+    text-align: center;
+    line-height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: inherit;
+    letter-spacing: 3px;
+    animation: move 6s linear infinite;
+}
+
+.sect3 div{
+    padding: 200px;
+    text-transform: full-size-kana;
+}
+
+.sect3 b{
+    color: brown;
 }
 
 .info{
@@ -304,13 +319,11 @@ body{
     line-height: 48px;
     color: #000000;
     text-align: center;
-    *margin-top: 84px;
-    *margin-bottom: 42px;
     font-weight: 900;
     text-transform: uppercase;
 }
 
-.info .info-text .separator--flower{
+.separator--flower{
     height: auto;
     border: 0;
     letter-spacing: normal;
@@ -321,7 +334,19 @@ body{
     font-family: Serif;
     font-weight: bold;
     color: coral;
+    animation: flower 6s linear infinite;
 } 
+
+@keyframes flower{
+    0%{
+        transform: rotate(0.25turn);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: rotate(0.25turn);
+    }
+}
+
 
 .info .info-text p{
     text-align: center;

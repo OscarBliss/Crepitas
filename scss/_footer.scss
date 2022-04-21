@@ -61,7 +61,8 @@ footer{
     .suscripcion{
         width: 450px;
         margin: auto;
-        background: rgba(1, 175, 255, 0.1);
+        *background: rgba(1, 175, 255, 0.1);
+        background-color: #7dbff2;
         padding: 10px 20px;
         box-sizing: border-box;
         margin-top: 20px;
@@ -84,8 +85,28 @@ footer{
             padding: 7px;
             box-sizing: border-box;
             font-size: 17px;
+            .button{
+                padding: 0 30px;
+                border: transparent solid 4px;
+                border-radius: 98px;
+                font-size: 18px;
+                background-color: #7dbff2;
+                color: #808b9f;
+                box-shadow: 26px -26px 52px #3d5e77,
+                -26px 26px 52px #bdffff;
+                &:active{
+                    border: #7dbff2 solid 4px;
+                    box-shadow: 26px -26px 52px #3d5e77,
+                    -26px 26px 52px #bdffff,
+                    inset -3px -3px 10px #ffffff,
+                    inset 3px 3px 10px #343434;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
             #mc_signup_submit{
-                background: black;
+                *background: black;
                 color: white;
                 padding: 10px;
                 &:hover{
